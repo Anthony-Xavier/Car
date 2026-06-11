@@ -1,0 +1,100 @@
+@use "../../style/variables" as *;
+
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: $primary-0;
+  border: 1px solid $primary-100;
+  border-radius: 16px;
+
+  &__main {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 16px 24px;
+  }
+
+  &__logo {
+    height: 24px;
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 12px;
+    padding: 10px 16px;
+    border: 1px solid $primary-100;
+    border-radius: 999px;
+  }
+
+  &__search-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  &__search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-family: $font-primary;
+    font-size: 14px;
+    color: $secondary-500;
+
+    &::placeholder {
+      color: $secondary-300;
+    }
+  }
+
+  &__search-filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $secondary-400;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__nav-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+    }
+
+    &--avatar img {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+    }
+  }
+
+  &__badge {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $error-500;
+    border: 1.5px solid $primary-0;
+  }
+}

@@ -1,0 +1,34 @@
+@use "./style/variables" as *;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primary;
+  margin: 0;
+  padding: 0;
+  color: #111;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
